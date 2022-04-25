@@ -93,6 +93,11 @@ img {
   right: -1.875rem;
 }
 
+.introducao-cover img{
+  object-fit: cover;
+  height: 100%;
+}
+
 .botao {
   background-color: var(--vermelho);
   color: var(--branco);
@@ -152,6 +157,38 @@ img {
   padding: 2.5rem;
 }
 
+@media (max-width: 37.5rem) {
+  .conteudo {
+    grid-template-columns: 1fr;
+  }
 
+  .introducao {
+    justify-items: start;
+    text-align: start;
+  }
+
+  .introducao::after {
+    display: none;
+  }
+
+  .links-item {
+    padding: .9375rem .9375rem;
+  }
+
+  .logo-bikcraft {
+    margin-top: 1.75rem;
+    margin-bottom: 2.75rem;
+  }
+
+  body {
+    gap: 2.75rem;
+  }
+
+  .flex-botao-mobile {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+  }
+}
 
 
